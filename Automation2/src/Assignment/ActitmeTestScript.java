@@ -5,7 +5,9 @@ import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
 public class ActitmeTestScript {
 	
@@ -55,6 +57,8 @@ public class ActitmeTestScript {
 		
 		//close the browser
 		driver.quit();
+		
+		//Select s = new Select(WebElement);
 		
 		
 	}
