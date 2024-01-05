@@ -8,40 +8,32 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class WorkingWithSelectByIndex {
-	
+public class WorkingWithIsMultiple {
+
 	public static void main(String[] args) {
-		
-		//Launch the browser
+
+		// Launch the browser
 		WebDriver driver = new ChromeDriver();
-		
-		//maximize the browser
+
+		// maximize the browser
 		driver.manage().window().maximize();
-		
-		//implicit wait
+
+		// implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-		
-		//launch the webapplication
+
+		// launch the webapplication
 		driver.get("https://demoapps.qspiders.com/dropdown?sublist=0");
-		
-		//Identify the dropdown
-		WebElement dropdown = driver.findElement(By.id("select3"));
-		
-		//Create the object of select class
+
+		// identify single-select dropdown
+		 WebElement dropdown = driver.findElement(By.id("select3"));
+
+		// create the object of select class
 		Select s = new Select(dropdown);
-		
-		//Using select by index
-		//s.selectByIndex(7);
-		
-		//Using select By value
-		s.selectByValue("United Kingdom");
-		
-		//using select by visible text
-		s.selectByVisibleText("Poland");
-		
-		
-		
-		
+
+		// use is multiple method
+		boolean value = s.isMultiple();
+		System.out.println(value);
+
 	}
 
 }
