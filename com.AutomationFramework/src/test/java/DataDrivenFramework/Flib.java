@@ -38,7 +38,7 @@ public class Flib {
 	}
 	
 	//method to check how many rows are there in excel sheet
-	public int getRowCount(String path, String sheetName, int rowNo) throws EncryptedDocumentException, IOException
+	public int getRowCount(String path, String sheetName) throws EncryptedDocumentException, IOException
 	{
 		FileInputStream fis = new FileInputStream(path);
 		Workbook book = WorkbookFactory.create(fis);
