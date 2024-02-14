@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-13T04:04:28Z" name="Suite" finished-at="2024-02-13T04:04:45Z" duration-ms="16284">
+    <groups>
+    </groups>
+    <test started-at="2024-02-13T04:04:28Z" name="Test" finished-at="2024-02-13T04:04:45Z" duration-ms="16284">
+      <class name="batchExecution.seleniumTest">
+        <test-method signature="searchSelenium()[pri:0, instance:batchExecution.seleniumTest@3697186]" started-at="2024-02-13T04:04:28Z" name="searchSelenium" finished-at="2024-02-13T04:04:33Z" duration-ms="5157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSelenium -->
+      </class> <!-- batchExecution.seleniumTest -->
+      <class name="batchExecution.ManualTest">
+        <test-method signature="manualSearch()[pri:0, instance:batchExecution.ManualTest@5b367418]" started-at="2024-02-13T04:04:39Z" name="manualSearch" finished-at="2024-02-13T04:04:45Z" duration-ms="5693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manualSearch -->
+      </class> <!-- batchExecution.ManualTest -->
+      <class name="batchExecution.SqlTest">
+        <test-method signature="sqlSearch()[pri:0, instance:batchExecution.SqlTest@1583741e]" started-at="2024-02-13T04:04:33Z" name="sqlSearch" finished-at="2024-02-13T04:04:39Z" duration-ms="5372" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sqlSearch -->
+      </class> <!-- batchExecution.SqlTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
