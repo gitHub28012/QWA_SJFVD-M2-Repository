@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[==Launching chrome Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launching chrome Browser==]]>
+    </line>
+    <line>
+      <![CDATA[==Launching chrome Browser==]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2024-02-15T04:12:13Z" name="Suite" finished-at="2024-02-15T04:12:31Z" duration-ms="17832">
+    <groups>
+    </groups>
+    <test started-at="2024-02-15T04:12:13Z" name="Test" finished-at="2024-02-15T04:12:31Z" duration-ms="17832">
+      <class name="com.TimesheetManagementToolProject.TestScript.CreateUserTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.CreateUserTest@4f3bbf68]" started-at="2024-02-15T04:12:24Z" name="launchBrowser" finished-at="2024-02-15T04:12:27Z" duration-ms="3359" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Launching chrome Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="createUser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.CreateUserTest@4f3bbf68]" started-at="2024-02-15T04:12:27Z" name="createUser" finished-at="2024-02-15T04:12:30Z" duration-ms="2858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.CreateUserTest@4f3bbf68]" started-at="2024-02-15T04:12:30Z" name="closeBrowser" finished-at="2024-02-15T04:12:31Z" duration-ms="238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.CreateUserTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.ValidLoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.ValidLoginTest@479460a6]" started-at="2024-02-15T04:12:13Z" name="launchBrowser" finished-at="2024-02-15T04:12:17Z" duration-ms="3929" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Launching chrome Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="login()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.ValidLoginTest@479460a6]" started-at="2024-02-15T04:12:17Z" name="login" finished-at="2024-02-15T04:12:18Z" duration-ms="1176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.ValidLoginTest@479460a6]" started-at="2024-02-15T04:12:18Z" name="closeBrowser" finished-at="2024-02-15T04:12:18Z" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.ValidLoginTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.InvalidLoginTest">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.InvalidLoginTest@7164ca4c]" started-at="2024-02-15T04:12:18Z" name="launchBrowser" finished-at="2024-02-15T04:12:21Z" duration-ms="3406" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==Launching chrome Browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="invalidLogin()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.InvalidLoginTest@7164ca4c]" started-at="2024-02-15T04:12:21Z" name="invalidLogin" finished-at="2024-02-15T04:12:24Z" duration-ms="2337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.TimesheetManagementToolProject.TestScript.InvalidLoginTest@7164ca4c]" started-at="2024-02-15T04:12:24Z" name="closeBrowser" finished-at="2024-02-15T04:12:24Z" duration-ms="247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.InvalidLoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
