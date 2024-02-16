@@ -5,15 +5,22 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
-public class CreateNewProjectPage {
-	
-	@FindBy(xpath ="//select[@name='customerId']")
+import com.TimesheetManagementToolProject.GenericLib.BaseTest;
+
+public class CreateNewProjectPage extends BaseClass {
+
+	public CreateNewProjectPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+
+	@FindBy(xpath = "//select[@name='customerId']")
 	private WebElement customerDropdown;
-	
-	@FindBy(xpath ="//input[@name='name']")
+
+	@FindBy(xpath = "//input[@name='name']")
 	private WebElement projectNameTextfield;
-	
-	@FindBy(xpath ="//input[@name='createProjectSubmit']")
+
+	@FindBy(xpath = "//input[@name='createProjectSubmit']")
 	private WebElement createProjectButton;
 
 	public WebElement getCustomerDropdown() {
@@ -27,20 +34,18 @@ public class CreateNewProjectPage {
 	public WebElement getCreateProjectButton() {
 		return createProjectButton;
 	}
-	
-	public void createCustomerAndProject(String customerName,WebDriver driver,String projectName)
-	{	
-		CreateNewCustomerPage page = new CreateNewCustomerPage(driver);
+
+	public void createCustomerAndProject(String customerName, String projectName) throws InterruptedException {
+		CreateNewCustomerPage page = new CreateNewCustomerPage(BaseTest.sdriver);
 		page.getCustomerNameTextField().sendKeys(customerName);
 		page.getCreateCustomerButton().click();
-		ProjectAndCustomerPage pp = new ProjectAndCustomerPage(driver);
+		ProjectAndCustomerPage pp = new ProjectAndCustomerPage(BaseTest.sdriver);
 		pp.clickOnCreateNewProject();
 		Select s = new Select(customerDropdown);
+		customerDropdown.click();
 		s.selectByVisibleText(customerName);
 		projectNameTextfield.sendKeys(projectName);
-		createProjectButton.click();	
+		createProjectButton.click();
 	}
-	
-	
 
 }

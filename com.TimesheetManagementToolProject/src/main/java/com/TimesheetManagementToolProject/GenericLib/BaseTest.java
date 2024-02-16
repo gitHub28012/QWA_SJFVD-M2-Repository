@@ -13,7 +13,8 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest extends Flib implements IAutoConstant {
 
-	public static WebDriver driver;
+	public WebDriver driver;
+	public static WebDriver sdriver;
 
 	@BeforeClass
 	public void launchBrowser() throws IOException {
@@ -36,6 +37,7 @@ public class BaseTest extends Flib implements IAutoConstant {
 		else {
 			Reporter.log("Invalid Browser",true);
 		}
+		sdriver=driver;
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TIMESECONDS));
 		driver.get(url);

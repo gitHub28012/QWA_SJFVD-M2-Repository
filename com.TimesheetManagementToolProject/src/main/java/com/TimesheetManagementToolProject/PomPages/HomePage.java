@@ -40,8 +40,9 @@ public class HomePage  extends BaseClass{
 	}
 	
 	//click on tasks link
-	public void clickOnTasksLink()
+	public void clickOnTasksLink() throws InterruptedException
 	{
+		Thread.sleep(2000);
 		tasksLink.click();
 	}
 	

@@ -10,5 +10,6 @@ public interface IAutoConstant {
 	String SHEETNAME = "Valid";
 	String INVALIDSHEETNAME = "Invalid";
 	String USERSHEETNAME =  "Userdata";
+	String CUSTOMERSHEET = "Customer";
 
 }
