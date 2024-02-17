@@ -10,16 +10,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
-public class BaseTest extends Flib implements IAutoConstant {
+public class BaseTest implements IAutoConstant {
 
 	public WebDriver driver;
 	public static WebDriver sdriver;
+	public Flib lib;
 
+	@Parameters("browser")
 	@BeforeClass
-	public void launchBrowser() throws IOException {
-		Flib lib = new Flib();
-		String browser = lib.getDataFromPropertyFile(PROPPATH, BROWSERKEY);
+	public void launchBrowser(@Optional("chrome") String browser) throws IOException {
+		lib = new Flib();
+		//String browser = lib.getDataFromPropertyFile(PROPPATH, BROWSERKEY);
 		String url = lib.getDataFromPropertyFile(PROPPATH, URLKEY);
 		Reporter.log("==Launching "+browser+" Browser==",true);
 		if (browser.equals("chrome")) {

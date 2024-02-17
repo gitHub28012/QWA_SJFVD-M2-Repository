@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.TimesheetManagementToolProject.TestScript.ValidLoginTest">
+        <methods>
+          <include name="login"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.ValidLoginTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.CreateUserTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="createUser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.CreateUserTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.CreateCustomerAndProjectTest">
+        <methods>
+          <include name="createCustomerAndProject"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.CreateCustomerAndProjectTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.InvalidLoginTest">
+        <methods>
+          <include name="invalidLogin"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.InvalidLoginTest -->
+      <class name="com.TimesheetManagementToolProject.TestScript.DeleteAllProjectAndCustomer">
+        <methods>
+          <include name="deleteAllProjectAndCustomer"/>
+          <include name="launchBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.TimesheetManagementToolProject.TestScript.DeleteAllProjectAndCustomer -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

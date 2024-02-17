@@ -18,21 +18,22 @@ public class CreateUserTest extends BaseTest {
 	@Test
 	public void createUser() throws EncryptedDocumentException, IOException {
 
-		ValidLoginTest login = new ValidLoginTest();
-		login.login();
+		String username = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 0);
+		String password = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 1);
+		LoginPage lp = new LoginPage(driver);
+		lp.loginIntoActitime(username, password);
 		HomePage hp = new HomePage(driver);
 		hp.clickOnUserLink();
 		CreateUserPage cup = new CreateUserPage(driver);
 		cup.clickOnCreateNewUser();
 		CreateNewUserPage cnw = new CreateNewUserPage(driver);
-		Flib lib  = new Flib();
 		WorkLib wlib = new WorkLib();
-		String username = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 0);
-		String password = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 1);
+		String username1 = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 0);
+		String password1 = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 1);
 		String fn = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 2);
-		String ln=lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 3);
-		cnw.createUser(username+wlib.randomNo(), password+wlib.randomNo(), fn+wlib.randomNo(), ln+wlib.randomNo());
-		
+		String ln = lib.getDataFromExcelFile(EXCELPATH, USERSHEETNAME, 1, 3);
+		cnw.createUser(username1 + wlib.randomNo(), password1 + wlib.randomNo(), fn + wlib.randomNo(),
+				ln + wlib.randomNo());
 
 	}
 

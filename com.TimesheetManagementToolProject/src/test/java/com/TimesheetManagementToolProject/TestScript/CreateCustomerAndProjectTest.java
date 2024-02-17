@@ -12,6 +12,7 @@ import com.TimesheetManagementToolProject.GenericLib.Flib;
 import com.TimesheetManagementToolProject.GenericLib.WorkLib;
 import com.TimesheetManagementToolProject.PomPages.CreateNewProjectPage;
 import com.TimesheetManagementToolProject.PomPages.HomePage;
+import com.TimesheetManagementToolProject.PomPages.LoginPage;
 import com.TimesheetManagementToolProject.PomPages.OpenTasksPage;
 import com.TimesheetManagementToolProject.PomPages.ProjectAndCustomerPage;
 
@@ -21,8 +22,10 @@ public class CreateCustomerAndProjectTest extends BaseTest {
 	public void createCustomerAndProject() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		//login
-		ValidLoginTest vlt = new ValidLoginTest();
-		vlt.login();
+		String username = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 0);
+		String password = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 1);
+		LoginPage lp = new LoginPage(driver);
+		lp.loginIntoActitime(username, password);
 		//click on task
 		HomePage hp = new HomePage(driver);
 		hp.clickOnTasksLink();
