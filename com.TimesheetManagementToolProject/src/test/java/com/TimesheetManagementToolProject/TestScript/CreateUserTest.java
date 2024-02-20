@@ -15,7 +15,7 @@ import com.TimesheetManagementToolProject.PomPages.LoginPage;
 
 public class CreateUserTest extends BaseTest {
 
-	@Test
+	@Test(groups = "ST")
 	public void createUser() throws EncryptedDocumentException, IOException {
 
 		String username = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 0);

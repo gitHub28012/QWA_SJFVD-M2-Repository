@@ -7,7 +7,7 @@
 			<class name="com.TimesheetManagementToolProject.TestScript.InvalidLoginTest" />
 			<class name="com.TimesheetManagementToolProject.TestScript.CreateUserTest" />
 			<class name="com.TimesheetManagementToolProject.TestScript.CreateCustomerAndProjectTest" />
-			<class name="com.TimesheetManagementToolProject.TestScript.DeleteAllProjectAndCustomer" />
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

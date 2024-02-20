@@ -20,7 +20,7 @@ public class BaseTest implements IAutoConstant {
 	public Flib lib;
 
 	@Parameters("browser")
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void launchBrowser(@Optional("chrome") String browser) throws IOException {
 		lib = new Flib();
 		//String browser = lib.getDataFromPropertyFile(PROPPATH, BROWSERKEY);
@@ -48,7 +48,7 @@ public class BaseTest implements IAutoConstant {
 
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void closeBrowser()
 	{
 		driver.quit();

@@ -15,7 +15,7 @@ import com.TimesheetManagementToolProject.PomPages.LoginPage;
 @Listeners(CustomListener.class)
 public class ValidLoginTest extends BaseTest {
 
-	@Test
+	@Test(groups = "ST")
 	public void login() throws EncryptedDocumentException, IOException {
 		Flib lib = new Flib();
 		String username = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 0);

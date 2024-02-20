@@ -18,7 +18,7 @@ import com.TimesheetManagementToolProject.PomPages.ProjectAndCustomerPage;
 
 public class CreateCustomerAndProjectTest extends BaseTest {
 
-	@Test
+	@Test(groups = {"RT","ST"})
 	public void createCustomerAndProject() throws EncryptedDocumentException, IOException, InterruptedException
 	{
 		//login

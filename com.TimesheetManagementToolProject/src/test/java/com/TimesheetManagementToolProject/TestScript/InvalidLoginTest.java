@@ -11,7 +11,7 @@ import com.TimesheetManagementToolProject.PomPages.LoginPage;
 
 public class InvalidLoginTest extends BaseTest {
 
-	@Test
+	@Test(groups = "FT")
 	public void invalidLogin() throws EncryptedDocumentException, IOException {
 		Flib lib = new Flib();
 		int rc = lib.getRowCount(EXCELPATH, INVALIDSHEETNAME);

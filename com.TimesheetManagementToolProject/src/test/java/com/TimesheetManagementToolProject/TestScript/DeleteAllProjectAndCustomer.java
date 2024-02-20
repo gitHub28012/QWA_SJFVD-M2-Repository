@@ -13,7 +13,7 @@ import com.TimesheetManagementToolProject.PomPages.ProjectAndCustomerPage;
 
 public class DeleteAllProjectAndCustomer extends BaseTest {
 
-	@Test
+	@Test(groups = "IT")
 	public void deleteAllProjectAndCustomer() throws EncryptedDocumentException, IOException, InterruptedException {
 		String username = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 0);
 		String password = lib.getDataFromExcelFile(EXCELPATH, SHEETNAME, 1, 1);
